@@ -13,7 +13,7 @@ export default function CurrentProjects() {
 							</div>
 							<div className="p-4 sm:p-6">
 								<h3 className="text-base sm:text-lg font-semibold text-white mb-2">Pockets of Hope</h3>
-								<p className="text-sm sm:text-base text-gray-300 mb-4">A story-generator management game that narrating two brother's dark journey.</p>
+								<p className="text-sm sm:text-base text-gray-300 mb-4">A story-generator management game that narrating two brother&apos;s dark journey.</p>
 								<div className="flex gap-2">
 									<a href="https://store.steampowered.com/app/3553990/Pockets_of_Hope/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 font-medium text-sm sm:text-base">
 										View Project →
