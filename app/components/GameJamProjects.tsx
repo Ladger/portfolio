@@ -6,21 +6,24 @@ const projects = [
         title: "Pockets of Hope",
         description: "Survival management game about a pickpocket who tries save his brother. Created in 'Jamination 7' under 48 hours. (Theme: Capture)",
         imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/gamejam-images/poh.png`,
-        projectUrl: "https://www.youtube.com/watch?v=IP3omQYllPY"
+        projectUrl: "https://www.youtube.com/watch?v=IP3omQYllPY",
+        buttonText: "Gameplay Video →"
     },
     {
         id: 2,
         title: "Dissolve",
         description: "Psychological top-down shooter about a character battling his subconscious. Created in 'Ruin the Jam' under 48 hours. (Theme: Decay)",
         imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/gamejam-images/dissolve.png`,
-        projectUrl: "https://ladger.itch.io/dissolve"
+        projectUrl: "https://ladger.itch.io/dissolve",
+        buttonText: "Open Itch →"
     },
     {
         id: 3,
         title: "Armstable",
         description: "2V2 fighting game, one player controls the body and other is the arm with Switch joycon. Created in 'Jamination 8' under 48 hours. (Theme: Unstable)",
         imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/gamejam-images/armstable.png`,
-        projectUrl: "https://ladger.itch.io/armstable"
+        projectUrl: "https://ladger.itch.io/armstable",
+        buttonText: "Open Itch →"
     }
 ];
 
@@ -40,7 +43,7 @@ export default function GameJamProjects() {
                                 <p className="text-sm sm:text-base text-gray-300 mb-4">{project.description}</p>
                                 <div className="flex gap-2">
                                     <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 font-medium text-sm sm:text-base">
-                                        View Project →
+                                        {project.buttonText}
                                     </a>
                                 </div>
                             </div>
