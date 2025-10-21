@@ -21,7 +21,7 @@ const projects = [
         title: "Block Jam 3D Clone",
         description: "Volunteer internship project given by senior developer Hüseyin Erdoğan. Replicating the original game Block Jam 3D with clean code structure",
         imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/completed-projects-images/blockjam3d.png`,
-        projectUrl: "#"
+        projectUrl: "https://github.com/Ladger/blockjam3D-clone"
     }
 ];
 

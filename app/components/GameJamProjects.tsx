@@ -13,14 +13,14 @@ const projects = [
         title: "Dissolve",
         description: "Psychological top-down shooter about a character battling his subconscious. Created in 'Ruin the Jam' under 48 hours. (Theme: Decay)",
         imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/gamejam-images/dissolve.png`,
-        projectUrl: "#"
+        projectUrl: "https://ladger.itch.io/dissolve"
     },
     {
         id: 3,
         title: "Armstable",
         description: "2V2 fighting game, one player controls the body and other is the arm with Switch joycon. Created in 'Jamination 8' under 48 hours. (Theme: Unstable)",
         imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/gamejam-images/armstable.png`,
-        projectUrl: "#"
+        projectUrl: "https://ladger.itch.io/armstable"
     }
 ];
 
