@@ -5,7 +5,6 @@ const repoName = 'portfolio';
 
 const basePath = isProd ? `/${repoName}` : '';
 
-process.env.NEXT_PUBLIC_BASE_PATH = basePath;
 
 const nextConfig = {
     output: 'export',
@@ -16,6 +15,10 @@ const nextConfig = {
 
     images: {
         unoptimized: true,
+    },
+
+    env: {
+        NEXT_PUBLIC_BASE_PATH: basePath,
     },
 };
 
