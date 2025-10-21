@@ -1,17 +1,19 @@
 /** @type {import('next').NextConfig} */
 
-// Replace 'portfolio' with your GitHub repository name
+const isProd = process.env.NODE_ENV === 'production';
 const repoName = 'portfolio';
 
+const basePath = isProd ? `/${repoName}` : '';
+
+process.env.NEXT_PUBLIC_BASE_PATH = basePath;
+
 const nextConfig = {
-    // 1. Outputs a static site in the 'out' folder
     output: 'export',
 
-    // 2. Configures the sub-path for GitHub Pages
-    basePath: `/${repoName}`,
-    assetPrefix: `/${repoName}/`,
+    basePath: basePath,
 
-    // 3. Required for static export with next/image
+    assetPrefix: isProd ? `/${repoName}/` : undefined,
+
     images: {
         unoptimized: true,
     },

@@ -5,21 +5,21 @@ const projects = [
         id: 1,
         title: "Pockets of Hope",
         description: "Survival management game about a pickpocket who tries save his brother. Created in 'Jamination 7' under 48 hours. (Theme: Capture)",
-        imageUrl: "/gamejam-images/poh.png",
+        imageUrl: '${process.env.NEXT_PUBLIC_BASE_PATH}/gamejam-images/poh.png',
         projectUrl: "https://www.youtube.com/watch?v=IP3omQYllPY"
     },
     {
         id: 2,
         title: "Dissolve",
         description: "Psychological top-down shooter about a character battling his subconscious. Created in 'Ruin the Jam' under 48 hours. (Theme: Decay)",
-        imageUrl: "/gamejam-images/dissolve.png",
+        imageUrl: '${process.env.NEXT_PUBLIC_BASE_PATH}/gamejam-images/dissolve.png',
         projectUrl: "#"
     },
     {
         id: 3,
         title: "Armstable",
         description: "2V2 fighting game, one player controls the body and other is the arm with Switch joycon. Created in 'Jamination 8' under 48 hours. (Theme: Unstable)",
-        imageUrl: "/gamejam-images/armstable.png",
+        imageUrl: '${process.env.NEXT_PUBLIC_BASE_PATH}/gamejam-images/armstable.png',
         projectUrl: "#"
     }
 ];
