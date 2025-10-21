@@ -9,7 +9,7 @@ export default function CurrentProjects() {
 					{[1].map((project) => (
 						<div key={project} className="bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
 							<div className="aspect-video bg-gray-700 relative">
-								<Image src={`/poh-current.png`} alt={`Project ${project}`} fill className="object-cover" />
+								<Image src={`${process.env.NEXT_PUBLIC_BASE_PATH}/poh-current.png`} alt={`Project ${project}`} fill className="object-cover" />
 							</div>
 							<div className="p-4 sm:p-6">
 								<h3 className="text-base sm:text-lg font-semibold text-white mb-2">Pockets of Hope</h3>
