@@ -15,8 +15,8 @@ const projects = [
         title: "Tuko'yu Kurtar",
         description: "Volunteer project for the organization 'Suyun Gözyaşları' which the organization is teaching the environmental awareness to primary school students.",
         imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/completed-projects-images/tukoyu-kurtar.jpg`,
-        projectUrl: "#",
-        buttonText: "Upcoming →"
+        projectUrl: "https://www.youtube.com/watch?v=fvBI5HXNcQY",
+        buttonText: "Gameplay Video →"
     },
     {
         id: 3,
