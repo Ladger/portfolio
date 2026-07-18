@@ -24,6 +24,14 @@ const projects = [
         imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/gamejam-images/armstable.png`,
         projectUrl: "https://www.youtube.com/watch?v=MzoFeiz0ogM",
         buttonText: "Gameplay Video →"
+    },
+    {
+        id: 4,
+        title: "Singularis",
+        description: "Top-down game about the single soul which tries to regain its synergetic pair-soul. Created in 'Jamstick Jam' under 48 hours. (Theme: Duality)",
+        imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/gamejam-images/singularis.png`,
+        projectUrl: "https://www.youtube.com/watch?v=TFfUbmloC5w",
+        buttonText: "Gameplay Video →"
     }
 ];
 
