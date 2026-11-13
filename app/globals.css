@@ -3,5 +3,28 @@
 @tailwind utilities;
 
 body {
-	background-color: #111111;
+	background-color: #f7f3ee;
+	color: #1d232b;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--font-condensed), Arial, sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Content stays in a narrow column; backgrounds still run full width. */
+.gutter {
+	padding-left: max(1.5rem, calc((100% - 1040px) / 2));
+	padding-right: max(1.5rem, calc((100% - 1040px) / 2));
+}
+
+.gutter-m {
+	margin-left: max(1.5rem, calc((100% - 1040px) / 2));
+	margin-right: max(1.5rem, calc((100% - 1040px) / 2));
 }

@@ -1,21 +1,25 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Barlow, Barlow_Condensed } from 'next/font/google';
 import './globals.css';
+import SiteHeader from './components/SiteHeader';
+import Footer from './components/Footer';
 
-const geistSans = Geist({
-	variable: '--font-geist-sans',
-	subsets: ['latin'],
+const barlow = Barlow({
+	variable: '--font-barlow',
+	subsets: ['latin', 'latin-ext'],
+	weight: ['400', '500', '600', '700'],
 });
 
-const geistMono = Geist_Mono({
-	variable: '--font-geist-mono',
-	subsets: ['latin'],
+const barlowCondensed = Barlow_Condensed({
+	variable: '--font-condensed',
+	subsets: ['latin', 'latin-ext'],
+	weight: ['500', '600', '700'],
 });
 
 export const metadata: Metadata = {
 	title: 'Berk Ozcan - Game Developer',
 	description:
-     'I am passionate, diciplened and open to learn. The games that I am developing is a great reflection of these attributes.',
+     'Game Developer with a Computer Engineering background and experience in professional game development and indie production. Unity, C#, gameplay systems and custom editor tools.',
 	keywords: [
         'Game Developer',
         'Unity',
@@ -29,7 +33,7 @@ export const metadata: Metadata = {
 	creator: 'Berk Özcan',
 	openGraph: {
 		title: 'Berk Özcan - Developer Portfolio',
-		description: 'I am passionate, diciplened and open to learn. The games that I am developing is a great reflection of these attributes.',
+		description: 'Game Developer with a Computer Engineering background and experience in professional game development and indie production. Unity, C#, gameplay systems and custom editor tools.',
 		url: 'https://berkozcan.com',
 		siteName: 'Berk Özcan - Portfolio',
 		images: [
@@ -63,7 +67,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+			<body className={`${barlow.variable} ${barlowCondensed.variable} font-sans antialiased`}>
+				<SiteHeader />
+				{children}
+				<Footer />
+			</body>
 		</html>
 	);
 }
